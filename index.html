@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="Rajneesh Goyal">
+	<meta name="description" content="Assignment 1">
+    <title>Pizzaz</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!--header-->
+    <header> 
+        <h1>Welcome to PIZZAZ!</h1>
+        <h4>Where Every Slice Is a Canvas!</h4>
+        <img src="top.jpg" height="100%" width="100%">
+    </header>
+
+    <!--main-->
+    <main>
+    <fieldset>
+    <fieldset>
+
+      <!--Order details-->
+      <legend>Order Details</legend>   <br>
+     
+    <!--form-->
+    <form action="new.html">
+
+    <div> 
+    <!--Number of pizzas-->
+     <label for="number">Number of Pizzas:</label> 
+     <input type="number" id="number" name="number" min="1" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     <br><br>
+    <!--Shape-->
+     <label for="shape">Shape of Pizza:</label> &nbsp;&nbsp;
+
+     <label for="circle">Circular</label>
+     <input type="radio" id="circle" name="shape" value="Circular"> &nbsp;&nbsp;
+
+     <label for="square">Square</label>
+     <input type="radio" id="square" name="shape" value="Square"> 
+    
+    <div>
+
+    <br><br>
+    
+    <div>
+    <!--Size-->
+     <label for="size">Size(Number of Slices) : &nbsp;&nbsp; </label> 
+     
+     <label for="small"> Small (6 slices)</label>
+     <input type="radio" id="small" name="size" value="Small (6 slices)"> &nbsp;&nbsp;
+
+     <label for="medium">Medium (8 slices)</label>
+     <input type="radio" id="medium" name="size" value="Medium (8 slices)"> &nbsp;&nbsp;
+
+     <label for="large">Large (10 slices)</label>
+     <input type="radio" id="large" name="size" value="Large (10 slices)"> &nbsp;&nbsp;
+
+     <label for="xlarge">X-Large (12 slices)</label>
+     <input type="radio" id="xlarge" name="size" value="X-Large (10 slices)"> 
+
+    </div>
+
+    <br><br>
+    
+    <div>
+    <!--Crust-->
+    <label for="crust">Select Crust: </label>
+    <select name="crust" id="crust">
+      <option value="Regular ">Regular</option>
+      <option value="Thin">Thin</option>
+      <option value="Stuffed">Stuffed</option>
+      <option value=" Deep-dish"> Deep-dish</option>
+      <option value="Chicago-style">Chicago-style</option>
+    </select>  
+     
+    </div>
+      
+    <br><br>
+
+    <div>
+    <!--Toppings-->
+    <label for="toppings">Toppings:</label> &nbsp;&nbsp;
+
+    <label for="pepperoni">Pepperoni</label>
+    <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni"> &nbsp;&nbsp;
+
+    <label for="sausage">Sausage</label>
+    <input type="checkbox" id="sausag9e" name="sausage" value="sausage"> &nbsp;&nbsp;
+
+    <label for="bacon">Bacon</label>
+    <input type="checkbox" id="bacon" name="bacon" value="bacon">   
+            
+    <label for="chicken">Chicken</label>
+    <input type="checkbox" id="chicken" name="chicken" value="chicken">  &nbsp;&nbsp;    <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <label for="mushrooms">Mushrooms</label>
+    <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms"> &nbsp;&nbsp;
+            
+    <label for="olives">Olives</label>
+    <input type="checkbox" id="olives" name="olives" value="olives"> &nbsp;&nbsp;
+
+    <label for="onion">Onion</label>
+    <input type="checkbox" id="onion" name="onion" value="onion"> &nbsp;&nbsp;
+ 
+    <label for="tomato">Tomato</label>
+    <input type="checkbox" id="tomato" name="tomato" value="tomato"> &nbsp;&nbsp;   
+    
+    </div>
+      
+    <br><br>
+
+    <div>
+      <!--Additional comments-->
+      <label for="comment">Additional Comments:</label>
+      <input type="Text" id="comment" name="comment" >
+      
+    </div>
+    
+   <br>
+
+    <div>
+      <!--Order type-->
+      <label for="order">Order Type: </label> &nbsp;&nbsp;   
+      <select name="order" id="order">
+      <option value="delivery">Delivery</option>
+      <option value="dinein">Dine-In</option>
+      <option value="takeaway">Take-Away</option>
+      </select>  
+
+    </div>
+
+  </fieldset>
+    
+  <br>
+
+  <fieldset>
+
+    <!--Customer details-->
+    <legend>Customer Details:</legend>   <br>  
+    
+    <label for="name">Name: </label>  
+    <input type="text" id="name" name="name" placeholder="Jacob Smith" required>    <br><br>
+
+    <label for="email">Email:</label>  
+    <input type="email" id="email" name="email" placeholder="pizza@gmail.com" required>   <br><br>
+
+    <label for="phone">Phone Number:</label>  
+    <input type="number" id="phone" name="phone" placeholder="123-456-7890" required>   <br><br>
+
+    <label for="address">Address:</label>  
+    <input type="text" id="address" name="address" placeholder="Address Line 1" required> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="address" name="address" placeholder="Address Line 2" > <br><br> 
+    
+    <label for="postal">Postal Code:</label>  
+    <input type="text" id="postal" name="postal" placeholder="A1A 1A1" required>
+
+    
+
+    
+  </fieldset> 
+
+  <fieldset>
+
+    <!--Payment Details-->
+    <legend>Payment Details: </legend>   <br>
+
+    <label for="card">Card Type: </label>   &nbsp;&nbsp; &nbsp;&nbsp;   
+
+     <label for="Credit">Credit Card: </label>
+     <input type="radio" id="Credit" name="Credit" value="Credit">
+
+     <label for="Debit">Debit Card: </label>
+     <input type="radio" id="Debit" name="Debit" value="Debit">  <br><br>
+
+    <label for="Cardn">Card Number: </label>  
+    <input type="number" id="Cardn" name="Cardn" placeholder="1234-1234-1234-1234" min="1111111111111111" max="9999999999999999">    <br><br>
+
+    <label for="Expiry">Expiry Date: </label>  
+    <input type="text" id="Expiry" name="Expiry" placeholder="01/11" required>    <br><br>
+
+    <label for="CVV">CVV: </label>  
+    <input type="number" id="CVV" name="CVV" placeholder="000" max="999" min="000">
+
+
+  </fieldset>
+ 
+   </fieldset>
+
+   <!-- Submit button -->
+  <input type="submit" value="Submit">
+  
+  <!-- Reset button -->
+  <input type="reset" value="Reset">
+    </form>
+    
+
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+
+      <small> All rights reserved @PIZZAZ , 2024. </small>
+
+    </footer>
+
+    
+</body>
+</html>
+
+
